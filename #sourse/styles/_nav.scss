@@ -1,0 +1,183 @@
+.nav {
+	padding: 0px 0px 0px 0px;
+	&_items {
+		padding: 16px 0px 20px 0px;	
+	}
+
+	&__box {
+		display: flex;
+		justify-content: space-between;
+		padding: 30px 0px 30px 0px;
+	}
+
+	&__logo {
+		&_title {
+			padding: 0px 0px 10px 0px;
+		}
+
+		&_subtitle {}
+	}
+
+	&__logo:hover {
+		cursor: url('../img/pointer.svg'), default;
+	}
+
+	&__item {
+		margin: 0px 0px 0px 35px;
+		cursor: url('../img/pointer.svg'), pointer;
+		position: relative;
+	}
+
+	&__item:active::before {
+		content: '';
+		position: absolute;
+		height: 3px;
+		min-width: 100%;
+		background-color: #F1CDB3;
+		top: 20px;
+		left: 0;
+	}
+}
+
+.burger__box-img {
+	display: none;
+}
+
+@media (max-width: 665px) {
+.nav {
+		&_items {
+		}
+
+		&__box {
+			padding: 0px 0px 0px 0px;
+		}
+
+		&__logo {
+			&_title {
+				padding: 0px 0px 0px 5px;
+			}
+
+			&_subtitle {
+				padding: 8px 0px 0px 6px;
+			}
+		}
+
+		&__item {
+			display: none;
+		}
+
+		&__burger {
+			padding: 2px 10px 0px 0px;	
+			display: block;
+		}
+
+	}
+.burger__box-img {
+	display: block;
+}
+}
+
+@media (min-width: 321px) and (max-width: 769px) {
+	.nav {
+			&_items {}
+	
+			&__box {
+				padding: 0px 0px 0px 0px;
+			}
+	
+			&__logo {
+				&_title {}
+	
+				&_subtitle {}
+			}
+	
+			&__item {
+			}
+	
+		}
+}
+
+.burger__box-img {
+	margin: 0px 10px 10px 0px;
+}
+
+.burger {
+	&__img {
+		display: flex;
+		flex-direction: column;
+		padding: 0px 0px 0px 0px;
+		position: relative;
+		z-index: 10;
+		transition: 1s;
+	}
+
+	&__icon {
+		width: 30px;
+		height: 2px;
+		background-color: #F1CDB3;
+		margin: 0px 0px 10px 0px;
+	}
+}
+
+
+.burger {
+	&__menu {}
+
+	&__box {
+		background: rgba(41, 41, 41, 0.6);
+		min-height: 500%;
+		min-width: 100%;
+		position: fixed;
+		top: 0;
+		right: -100%;
+		z-index: 5;
+	}
+
+	&__items {
+		transition: 1s;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 208px 39px 248px 39px;
+		background-color: #292929;
+		max-width: 320px;
+		position: fixed;
+		top: 0;
+		right: -100%;
+		overflow-y: hidden;
+		z-index: 10;
+	}
+
+	&__item {
+		font-family: Arial, Helvetica, sans-serif;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 3.2rem;
+		line-height: 5.1rem;
+		color: #CDCDCD;
+		margin: 40px 0px 0px 0px;
+	}
+}
+
+.burger__item-active {
+	border-bottom: 3px solid #F1CDB3;
+}
+
+.right {
+	transition: 1s;
+	right: 0;
+}
+
+.block {
+	right: 0;
+}
+
+.hidden {
+	overflow-y: hidden;
+}
+
+.deg {
+	transition: 1s;
+	transform: rotate(90deg);
+	margin: -5px 5px 0px 0px;
+}
