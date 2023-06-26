@@ -1,0 +1,60 @@
+.our-pets {
+	background-color: #FFFFFF;
+	&__color {
+		&_title {
+			margin: 3px 0px 0px 3px;
+			color: #545454;
+		}
+
+		&_title:hover {
+			cursor: url('../img/pointer.svg'), pointer;
+		}
+
+		&_subtitle {
+			margin: 0px 0px 0px 3px;
+			color: #292929;
+		}
+
+		&_subtitle:hover {
+			cursor: url('../img/pointer.svg'), pointer;
+		}
+		
+	}
+
+	&__item-active {
+		color: #545454;
+		position: relative;
+		cursor: url('../img/icon.svg'), default;
+	}
+
+	&__item-active::before {
+		content: '';
+		position: absolute;
+		height: 3px;
+		min-width: 100%;
+		background-color: #F1CDB3;
+		top: 20px;
+		left: 0;
+	}
+
+	&__item {
+		&_color {
+			color: #545454;
+			transition-duration: 0.5s;
+		}
+
+		&_color:hover {
+			transition-duration: 0.5s;
+			color: #292929;
+		}
+	}
+}
+
+.nav__logo__our-pets:hover {
+	cursor: url('../img/pointer.svg'), pointer;
+}
+
+
+.our-pets__burger-color {
+	background-color: #000000;
+}
