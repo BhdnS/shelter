@@ -1,1 +1,1 @@
-https://bhdns.github.io/Shelter/index.html
+https://bhdns.github.io/shelter/index.html
