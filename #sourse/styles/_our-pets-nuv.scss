@@ -1,0 +1,22 @@
+.our-pets {
+	background-color: #FFFFFF;
+	&__color {
+		&_title {
+			color: #545454;
+		}
+
+		&_subtitle {
+			color: #292929;
+		}
+	}
+
+	&__item-active {
+		color: #292929;
+	}
+
+	&__item {
+		&_color {
+			color: #545454;
+		}
+	}
+}
